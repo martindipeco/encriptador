@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./img/lock_FILL0_wght400_GRAD0_opsz24.svg" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
+    <link rel="stylesheet" href="style.css">
+    <title>Quo Vadis?</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container__contenido">
+            <div class="container__informaciones">
+                <div class="container__texto">
+                    <h1>CAESARIS ENCRYPTUS NUNTIUS</h1>
+                </div>
+
+                <input type="text" id="texto-usuario" maxlength="52" placeholder="Ingrese su mensaje, maximo 52 caracteres" class="container__input">
+                <div class="container__texto_small">
+                    <p class="texto__parrafo">Ingrese la cifra secreta</p>
+                    <input type="number" id="cifrado" class="container__input_small">
+                </div>
+                <div class="chute container__botones">
+                    <button onclick="enviarMensaje();" class="container__boton" id="enviar">Enviar</button>
+                    <button onclick="borrar();" class="container__boton" id="reiniciar">Borrar</button>
+                </div>
+                <input type="text" id="texto-cifrado" placeholder="Aquí aparecerá el mensaje cifrado" class="container__input">
+            </div>
+            <img src="./img/caesar.png" alt="El Cesar mirando a la izquierda" class="container__imagen-persona" />
+            <!--fuente imagen: https://sites.dartmouth.edu/jacko/2019/11/18/history-department-uncovers-concrete-evidence-that-julius-caesar-was-in-fact-not-a-dartmouth-alumnus/-->
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
