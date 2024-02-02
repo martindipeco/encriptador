@@ -76,40 +76,13 @@ body::before {
 }
 
 .container__texto {
-    margin: 16px 0 16px 0;
-    max-width: 90px; /* Set the maximum width based on the width of container__input_small */
-    max-height: 45px;
-    /*overflow: hidden;/**/ 
-    /*white-space: nowrap;/**/
-    /*text-overflow: ellipsis; /* Optional: Display ellipsis (...) for overflowed text */
-}
-
-.container__texto h1 {
-    font-family: 'Cinzel', Garamond, 'Times New Roman', Times, serif;
-    font-size: 32px;
-    font-weight: bold;
-    /*text-decoration: underline;*/
-    padding-bottom: 3rem;
-    position: absolute; /**/
-    vertical-align: top;
-    top: 24px;
-    /*left: 16px; */
-    width: 50%; /* Occupy half width of container__contenido */
-    box-sizing: border-box; /* Include padding and border in the width calculation */
-    padding-top: 24px;
-    /*padding: 8px;  Adjust padding as needed */
-    color: ivory; /* You can adjust the color as needed */
-    /*background-color: rgba(0, 0, 0, 0.5); /* Example background color with transparency */
+    margin-bottom: 12px;
 }
 
 .container__texto_small {
     display: flex;
     align-items: center;
     margin: 16px 16px 8px 16px;
-}
-
-.container__texto-azul {
-    color: #1875E8;
 }
 
 .container__input {
@@ -171,12 +144,7 @@ body::before {
     position: initial;
 }
 
-h1 {
-    font-family: 'Cinzel', Garamond, 'Times New Roman', Times, serif;
-    font-size: 54px;
-    padding-bottom: 1rem;
-    text-align: center;
-}
+
 
 p,
 button {
