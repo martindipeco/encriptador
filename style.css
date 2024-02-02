@@ -148,6 +148,7 @@ body::before {
 #enviar {
     background-color: rgb(85, 97, 47);
     color: ivory;
+    transition: 1s background;
 }
 
 #enviar:hover {
@@ -157,6 +158,7 @@ body::before {
 #reiniciar {
     background-color: rgb(108, 64, 64);
     color: ivory;
+    transition: 1s background;
 }
 
 #reiniciar:hover {
