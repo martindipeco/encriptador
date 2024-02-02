@@ -187,7 +187,7 @@ button {
       background-size: cover; /* Adjust background size for better display on small screens */
     }
 
-    img {
+    .container__imagen-persona {
         display: none;
     }
     
