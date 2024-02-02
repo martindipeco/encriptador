@@ -150,9 +150,17 @@ body::before {
     color: ivory;
 }
 
+#enviar:hover {
+    background-color: #4e5e18;
+}
+
 #reiniciar {
     background-color: rgb(108, 64, 64);
     color: ivory;
+}
+
+#reiniciar:hover {
+    background-color:  rgb(109, 53, 53);;
 }
 
 .container__imagen-persona{
