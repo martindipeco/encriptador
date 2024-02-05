@@ -7,6 +7,16 @@ let rangoCifradoInput = document.getElementById("cifrado");
 rangoCifradoInput.setAttribute("max", rangoCifrado);
 rangoCifradoInput.setAttribute("min", -rangoCifrado);
 
+//para el menu hamburguesa
+function myMenu() { //previously myFunction
+    var x = document.getElementById("my-nav-bar");
+    if (x.className === "nav-bar-resp") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav-bar-resp";
+    }
+}
+
 function convertirARango(numero) {
   // Usa el operador de módulo para obtener el resto de la división entre el número y 51 (25 * 2 + 1)
   // Luego, resta 25 para asegurarte de que el resultado esté en el rango de -25 a 25

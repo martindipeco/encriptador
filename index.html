@@ -8,12 +8,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="./img/lock_FILL0_wght400_GRAD0_opsz24.svg" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Quo Vadis?</title>
 </head>
 
 <body>
-
+    <!--Responsive navigation menu-->
+    <div class="nav-bar-resp" id="my-nav-bar">
+        <a href="./index.html" class="active">Inicio</a>
+        <a href="#historia">Historia</a>
+        <a href="#">Como funciona</a>
+        <a href="#">Contacto</a>
+        <a href="javascript:void(0);" class="icon" onclick="myMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
     <div class="container">
         <div class="container__contenido">
             <div class="container__informaciones">
@@ -31,6 +42,10 @@
                     <button onclick="borrar();" class="container__boton" id="reiniciar">Borrar</button>
                 </div>
                 <input type="text" id="texto-cifrado" placeholder="Aquí aparecerá el mensaje cifrado" class="container__input" disabled>
+                <hr>
+                <div class="container__texto">
+                    <h1 id="historia">Historia</h1>
+                </div>
             </div>
             <img src="./img/caesar.png" alt="El Cesar mirando a la izquierda" class="container__imagen-persona" />
             <!--fuente imagen: https://sites.dartmouth.edu/jacko/2019/11/18/history-department-uncovers-concrete-evidence-that-julius-caesar-was-in-fact-not-a-dartmouth-alumnus/-->
