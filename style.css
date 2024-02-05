@@ -200,6 +200,22 @@ button {
     font-weight: 400;
 }
 
+footer {
+    padding: 0.5vw;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    display: flex;
+    text-align: left;
+    position: fixed; /* Position the menu fixed to the top of the viewport */
+    bottom: 0; /* Align it to the top */
+    width: 100%; /* Make it full-width */
+    z-index: 1000; /* Set a higher z-index to make sure it appears above other elements */
+}
+
+footer a {
+    text-decoration: none;
+}
+
 /* manejo de la imagen para pantallas pequeñas */
 
 @media only screen and (max-width: 768px) {
