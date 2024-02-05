@@ -48,6 +48,7 @@ body::before {
     text-align: center;
     padding: 14px 16px;
     color: #898989;
+    font-family: 'Cinzel','Times New Roman', Times, serif;
     text-decoration: none;
     opacity: 0.5;
 }
@@ -55,6 +56,7 @@ body::before {
 /* Add an active class to highlight the current page */
 .nav-bar-resp a.active {
     color: rgb(100, 100, 7);
+    font-family: 'Cinzel','Times New Roman', Times, serif;
     text-decoration: none;
     opacity: 1;
 }
@@ -214,6 +216,14 @@ footer {
 
 footer a {
     text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#como-funciona {
+    height: 400 px;
 }
 
 /* manejo de la imagen para pantallas pequeñas */
