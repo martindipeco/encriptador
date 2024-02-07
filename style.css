@@ -66,9 +66,14 @@ body::before {
     display: none;
 }
 
+.fa-bars {
+    color: rgb(100, 100, 7);
+    opacity: 1;
+}
+
 .container {
     width: 1200px;
-    height: 600px;
+    min-height: 600px; /* before-> height: 600 px*/
     display: flex; /* sugerencia probar con block */
     margin-bottom: 20px;
     align-items: center;
@@ -87,6 +92,7 @@ body::before {
     align-items: center;
     position: absolute;
     bottom: 0;
+    min-height: 0; /* new line */
 }
 
 .container__informaciones {
@@ -208,6 +214,7 @@ button {
 }
 
 /* CSS to target all SVG files with src attribute starting with "logo" */
+/* The "^" symbol is a part of the CSS attribute selector syntax and represents the "starts with" operator. */
 img[src^="./img/logo"] {
     margin-right: 50px; 
 }
@@ -251,14 +258,23 @@ footer a:hover {
         display: none;
     }
 
-    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-    .nav-bar-resp a:not(:first-child) {display: none;}
+    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. */ 
+    /*This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+    .nav-bar-resp a:not(:first-child) {
+        display: none;
+    }
+
     .nav-bar-resp a.icon {
         float: right;
         display: block;
     }
 
-    .nav-bar-resp.responsive {position: relative;}
+    .nav-bar-resp.responsive {
+        position: fixed; /* before: relative*/
+        top: 0; /* new line */
+        left: 0; /* new line */
+    }
+
     .nav-bar-resp.responsive a.icon {
         position: absolute;
         right:0;
