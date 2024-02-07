@@ -117,6 +117,11 @@ body::before {
 .container__texto {
     margin-bottom: 12px;
     font-family: 'Cinzel','Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+.container__texto a {
+    text-decoration: none;
 }
 
 .container__texto_small {
@@ -200,6 +205,11 @@ button {
 .texto__parrafo {
     font-size: 28px;
     font-weight: 400;
+}
+
+/* CSS to target all SVG files with src attribute starting with "logo" */
+img[src^="./img/logo"] {
+    margin-right: 50px; 
 }
 
 footer {
