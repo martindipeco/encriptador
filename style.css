@@ -192,6 +192,7 @@ body::before {
 }
 
 #copiar {
+    margin-top: 0;
     background-color: #162335;
     color: ivory;
     transition: 1s background;
