@@ -312,19 +312,16 @@ footer a:hover {
         display: block;
         text-align: left;
     }
+
+    /* Change h1 and h2 size on smaller screens */
+    h1 {
+        font-size: 24px;
+    }
     
-  }
-
-/* Media query to hide the second image on small screens */
-/*
-@media screen and (max-width: 800px) {
-    body::after {
-        display: none;
+    h2 {
+        font-size: 20px;
     }
-
-    img {
-        display: none;
-    }
+    
 }
-*/  
+
 
