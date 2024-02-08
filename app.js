@@ -37,8 +37,21 @@ function enviarMensaje()
 {
     //capturar texto
     let texto = document.getElementById("texto-usuario").value;
+    if (texto === "")
+    {
+        alert("Por favor ingrese algún mensaje");
+        return;
+    }
     //capturar cifra
-    let numeroCifrado = parseInt(document.getElementById('cifrado').value);
+    let numeroCifrado = document.getElementById("cifrado").value;
+    if (numeroCifrado === "")
+    {
+        alert("Por favor, ingrese un número");
+        return;
+    }
+    //parseo a int
+    numeroCifrado = parseInt(numeroCifrado);
+    
     //me aseguro que la cifra esté en el rango correcto
     numeroCifrado = numeroCifrado % 26;
     //por las dudas, manejo el caso del cero
@@ -115,4 +128,21 @@ function borrar()
     document.querySelector('#cifrado').value = '';
     document.querySelector('#texto-usuario').value = '';
     document.querySelector('#texto-cifrado').value = '';
+}
+
+function copiarMensaje()
+{
+    //capturar value de input field
+    //usar la api del clipboard
+    let textoInput = "";
+    textoInput = document.getElementById("texto-cifrado").value;
+    navigator.clipboard.writeText(textoInput);
+    //mostrar mensaje de éxito
+    let mensaje = document.getElementById("copiado");
+    //lo hago aparecer cambiando su display en css de "none" a "block"
+    mensaje.style.display = "block";
+    //lo hago desaparecer con setTimeout, que espera una funcion y un tiempo
+    setTimeout(function(){
+        mensaje.style.display = "none";
+    }, 2000);
 }

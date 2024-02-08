@@ -191,6 +191,32 @@ body::before {
     background-color:  rgb(109, 53, 53);;
 }
 
+#copiar {
+    background-color: #162335;
+    color: ivory;
+    transition: 1s background;
+    cursor: pointer;
+}
+
+#copiar:hover {
+    background-color: #041832;
+}
+
+#copiado {
+    display: none; /* Initially hide the message */
+    background-color: #4e5e18; /* Green background */
+    color: ivory;
+    font-family: 'Cinzel','Times New Roman', Times, serif;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+  }
+  
+
+
 #texto-cifrado {
     margin-bottom: 40px;
 }
