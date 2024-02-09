@@ -13,14 +13,33 @@ function myMenu() {
     } else {
         //caso contrario, si ya era responsive, vuelve a normal
         x.className = "nav-bar-resp";
-    }
+    }    
 }
 
 //funcion para el falso SPA / VUE.js
 //activa bloques como si fueran links
 
+function repliegoResponsivo()
+{
+    var x = document.getElementById("my-nav-bar");
+
+    if (x.className === "nav-bar-resp responsive") {
+        //le cambio el nombre a la clase para que tome otros css
+        x.className = "nav-bar-resp";
+    }
+}
+
 function activaBloque(id)
 {
+    //repliego el menu responsivo si estaba abierto
+    repliegoResponsivo();
+
+    //quita atributo active de la barra de navegacion a todas las secciones que no sean la apropiada
+    //TODO
+
+    //agrega atributo active a la seccion correspondiente de la barra de navegacion
+    //TODO
+    
     // Get all the sections
     const sections = document.querySelectorAll('.container__texto');
 
