@@ -17,10 +17,10 @@
 <body>
     <!--Responsive navigation menu-->
     <div class="nav-bar-resp" id="my-nav-bar">
-        <a href="./index.html" class="active">Inicio</a>
-        <a href="./historia.html">Historia</a>
-        <a href="./como-funciona.html">Como funciona</a>
-        <a href="./contacto.html">Contacto</a>
+        <a href="#" class="active" onclick="activaBloque('bloque-index')">Inicio</a>
+        <a href="#" onclick="activaBloque('bloque-historia')">Historia</a>
+        <a href="#" onclick="activaBloque('bloque-comofunciona')">Como funciona</a>
+        <a href="#" onclick="activaBloque('bloque-contacto')">Contacto</a>
         <a href="javascript:void(0);" class="icon" onclick="myMenu()">
             <i class="fa fa-bars"></i>
         </a>
@@ -28,7 +28,7 @@
     <div class="container">
         <div class="container__contenido">
             <div class="container__informaciones">
-                <div class="container__texto">
+                <div class="container__texto" id="bloque-index">
                     <h1>SECRETUM CAESARIS</h1>
                     <input type="text" id="texto-usuario" maxlength="52" placeholder="Ingrese su mensaje, sin acentos, máximo 52 caracteres" class="container__input">
                     <div class="container__texto_small">
@@ -44,6 +44,54 @@
                     <div class="chute container__botones">
                         <button onclick="copiarMensaje();" class="container__boton" id="copiar">Copiar mensaje</button>
                     </div>
+                </div>
+                <div class="container__texto" id="bloque-historia">
+                    <h1>HISTORIA</h1>
+                    <br>
+                    <br>
+                    <h2>El primer sistema encriptador es atribuido a Julio César, ideado para enviar mensajes secretos a sus generales durante sus campañas militares</h2>
+                    <br>
+                    <br>
+                    <h2>El procedimiento consistía en una sustitución letra por letra</h2>
+                    <br>
+                    <br>
+                    <h2>A pesar de su simplicidad, era efectivo en tiempos de escasa alfabetización</h2>
+                </div>
+                <div class="container__texto" id="bloque-comofunciona">
+                    <h1>CÓMO FUNCIONA</h1>
+                    <br>
+                    <br>
+                    <h2>Primero se ingresa un mensaje a encriptar</h2>
+                    <br>
+                    <br>
+                    <h2>Luego un número para el cifrado</h2>
+                    <br>
+                    <br>
+                    <h2>Cada una de las letras del mensaje se desplaza en el alfabeto de acuerdo al número ingresado</h2>
+                    <br>
+                    <br>
+                    <h2>Por ejemplo, si se ingresa 1, la A se convierte en B, la B en C, y así hasta que la Z se convierte en A</h2>
+                </div>
+                <div class="container__texto" id="bloque-contacto">
+                    <h1>CORREO & REDES</h1>
+                    <br>
+                    <br>
+                    <h2><a href="mailto:martindipeco@gmail.com?subject=encriptador" target="_blank">
+                        <img src="./img/logo-gmail.svg" width="32" height="32" viewBox="0 0 32 32" alt="gmail">
+                        martindipeco
+                    </a></h2>
+                    <br>
+                    <br>
+                    <h2><a href="https://github.com/martindipeco" target="_blank"><img src="./img/logo-github.svg" width="32" height="32" viewBox="0 0 32 32" alt="github"> martindipeco</a></h2>
+                    <br>
+                    <br>
+                    <h2><a href="https://www.linkedin.com/in/martindipeco/" target="_blank"><img src="./img/logo-linkedin.svg" width="32" height="32" viewBox="0 0 32 32" alt="Linked in"> martindipeco</a></h2>
+                    <br>
+                    <br>
+                    <h2><a href="https://www.instagram.com/martindipeco/" target="_blank"><img src="./img/logo-instagram.svg" width="32" height="32" viewBox="0 0 32 32" alt="instagram"> martindipeco</a></h2>
+                    <br>
+                    <br>
+                    <h2><a href="https://twitter.com/MartnDiPeco1" target="_blank"><img src="./img/logo-xtwitter.svg" width="32" height="32" viewBox="0 0 32 32" alt="X - Twitter"> MartnDiPeco1</a></h2>
                 </div>
             </div>
             <img src="./img/caesar.png" alt="El Cesar mirando a la izquierda" class="container__imagen-persona" />

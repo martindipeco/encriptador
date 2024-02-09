@@ -123,6 +123,11 @@ body::before {
     margin-bottom: 12px;
     font-family: 'Cinzel','Times New Roman', Times, serif;
     text-decoration: none;
+    display: none;  /*Hide all sections by default */
+}
+
+.container__texto.active {
+    display: block;  /* Show the active section  probar sino con flex */
 }
 
 .container__texto a {

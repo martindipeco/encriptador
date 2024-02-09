@@ -1,3 +1,6 @@
+//muestro index por default
+document.getElementById('bloque-index').style.display = 'block';
+
 //para el menu hamburguesa
 //función myMenu se activa cuando se hace click en el icono de las barras
 function myMenu() { 
@@ -11,6 +14,24 @@ function myMenu() {
         //caso contrario, si ya era responsive, vuelve a normal
         x.className = "nav-bar-resp";
     }
+}
+
+//funcion para el falso SPA / VUE.js
+//activa bloques como si fueran links
+
+function activaBloque(id)
+{
+    // Get all the sections
+    const sections = document.querySelectorAll('.container__texto');
+
+    // Loop through each section
+    sections.forEach(section => {
+        // Hide all sections
+        section.style.display = 'none';
+    });
+
+    // Show the target section
+    document.getElementById(id).style.display = 'block';
 }
 
 //resto de funciones
