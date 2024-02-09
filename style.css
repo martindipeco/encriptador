@@ -1,4 +1,4 @@
-/* tipografía Cinzel imita Roma antigua - Google fonts*/
+/* tipografía Cinzel imita Roma antigua - https://fonts.google.com/specimen/Cinzel */
 
 * {
     box-sizing: border-box;
@@ -68,13 +68,12 @@ body::before {
 
 .fa-bars {
     color: rgb(100, 100, 7);
-    opacity: 1;
 }
 
 .container {
     width: 1200px;
     min-height: 600px; /* before-> height: 600 px*/
-    display: flex; /* sugerencia probar con block */
+    display: flex; /* before-> block */
     margin-bottom: 20px;
     align-items: center;
     justify-content: space-between;
@@ -205,7 +204,7 @@ body::before {
 
 #copiado {
     display: none; /* Initially hide the message */
-    background-color: #4e5e18; /* Green background */
+    background-color: #4e5e18; 
     color: ivory;
     font-family: 'Cinzel','Times New Roman', Times, serif;
     padding: 10px;
@@ -270,7 +269,8 @@ footer a:hover {
     height: 400 px;
 }
 
-/* manejo de la imagen para pantallas pequeñas */
+
+/* manejo de UI para pantallas pequeñas */
 
 @media only screen and (max-width: 768px) {
     body::before {
@@ -286,7 +286,6 @@ footer a:hover {
     }
 
     /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. */ 
-    /*This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
     .nav-bar-resp a:not(:first-child) {
         display: none;
     }
