@@ -231,7 +231,7 @@ body::before {
 }
 
 .container__imagen-persona{
-    position: initial; /* before: initial*/ 
+    position: sticky; /* before: initial*/ 
     /* bottom: 0;  Stick it to the bottom of its container */
     /* right: -600px;  Adjust the distance from the right edge */
 } 

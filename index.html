@@ -17,10 +17,10 @@
 <body>
     <!--Responsive navigation menu-->
     <div class="nav-bar-resp" id="my-nav-bar">
-        <a href="#" class="active" onclick="activaBloque('bloque-index')">Inicio</a>
-        <a href="#" onclick="activaBloque('bloque-historia')">Historia</a>
-        <a href="#" onclick="activaBloque('bloque-comofunciona')">Como funciona</a>
-        <a href="#" onclick="activaBloque('bloque-contacto')">Contacto</a>
+        <a href="#" class="active" onclick="activaBloque('bloque-index', this.id)" id="a-inicio">Inicio</a>
+        <a href="#" onclick="activaBloque('bloque-historia', this.id)" id="a-historia">Historia</a>
+        <a href="#" onclick="activaBloque('bloque-comofunciona', this.id)" id="a-comofunciona">Como funciona</a>
+        <a href="#" onclick="activaBloque('bloque-contacto', this.id)" id="a-contacto">Contacto</a>
         <a href="javascript:void(0);" class="icon" onclick="myMenu()">
             <i class="fa fa-bars"></i>
         </a>

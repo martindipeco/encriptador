@@ -1,8 +1,10 @@
-//muestro index por default
+//muestro bloque index por default
 document.getElementById('bloque-index').style.display = 'block';
 
 //para el menu hamburguesa
 //función myMenu se activa cuando se hace click en el icono de las barras
+//el icono de barras solo es visible cuando la pantalla es pequeña
+
 function myMenu() { 
     //el id my nav bar corresponde al bloque de la barra superior
     var x = document.getElementById("my-nav-bar");
@@ -16,8 +18,10 @@ function myMenu() {
     }    
 }
 
+
 //funcion para el falso SPA / VUE.js
 //activa bloques como si fueran links
+//repliego responsivo vuelve a replegar el menu si quedó desplegado
 
 function repliegoResponsivo()
 {
@@ -29,16 +33,38 @@ function repliegoResponsivo()
     }
 }
 
-function activaBloque(id)
+//quito activo elimina la propiedad activa en el nav bar
+function quitoActive()
+{
+    // Selecciono todos los <a> del navbar 
+    var navLinks = document.querySelectorAll("#my-nav-bar a");
+
+    // itero todos los <a> 
+    navLinks.forEach(function(link) {
+        // quito el "active" class si es que lo tiene
+        if (link.classList.contains('active')) {
+         link.classList.remove('active');
+        }
+    });
+}
+
+//convierto en activo el link cliqueado
+function agregoActive(id)
+{
+    var specificLink = document.getElementById(id); 
+    specificLink.classList.add('active');
+}
+
+function activaBloque(idBloque, idNav)
 {
     //repliego el menu responsivo si estaba abierto
     repliegoResponsivo();
 
     //quita atributo active de la barra de navegacion a todas las secciones que no sean la apropiada
-    //TODO
+    quitoActive();
 
     //agrega atributo active a la seccion correspondiente de la barra de navegacion
-    //TODO
+    agregoActive(idNav);
     
     // Get all the sections
     const sections = document.querySelectorAll('.container__texto');
@@ -50,7 +76,7 @@ function activaBloque(id)
     });
 
     // Show the target section
-    document.getElementById(id).style.display = 'block';
+    document.getElementById(idBloque).style.display = 'block';
 }
 
 //resto de funciones
