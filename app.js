@@ -195,10 +195,12 @@ function copiarMensaje()
     navigator.clipboard.writeText(textoInput);
     //mostrar mensaje de éxito
     let mensaje = document.getElementById("copiado");
+
     //lo hago aparecer cambiando su display en css de "none" a "block"
     mensaje.style.display = "block";
+       
     //lo hago desaparecer con setTimeout, que espera una funcion y un tiempo
     setTimeout(function(){
         mensaje.style.display = "none";
-    }, 2000);
+    }, 1000);
 }
